@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+
+
+
+    <div class="container">
+        <h2>Login</h2>
+
+        <input type="email" id="email" placeholder="Digite seu email">
+        <input type="password" id="password" placeholder="Digite sua senha">
+
+        <label class="mostrar-senha">
+            <input type="checkbox" onclick="mostrarSenha()"> Mostrar Senha
+        </label>
+
+        <button onclick="login()">Entrar</button>
+
+        <p id="mensagem"></p>
+
+        <a href="#" onclick="esqueceuSenha()" class="link-senha">Esqueci minha senha</a>
+    </div>
+
+    <!-- Modal esqueci senha -->
+    <div id="modal" class="modal-overlay" style="display:none;">
+        <div class="modal-box">
+            <h3>Recuperar senha</h3>
+            <p>Digite seu email e enviaremos as instruções de recuperação.</p>
+            <input type="email" id="emailRecuperacao" placeholder="Digite seu email">
+            <p id="mensagemModal"></p>
+            <div class="modal-buttons">
+                <button onclick="enviarRecuperacao()">Enviar</button>
+                <button class="btn-cancelar" onclick="fecharModal()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
