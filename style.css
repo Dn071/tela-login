@@ -9,14 +9,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    min-height: 100dvh;
     background-image: url('fundo.jpg.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: scroll;
+    
 }
 
-
+/* ───── CARD DARK ───── */
 .container {
     background: rgba(10, 10, 20, 0.82);
     backdrop-filter: blur(16px);
@@ -25,6 +28,7 @@ body {
     padding: 30px 28px;
     border-radius: 15px;
     width: 300px;
+    max-width: 100%;
     text-align: center;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
 }
@@ -113,7 +117,7 @@ button:hover {
     text-decoration: underline;
 }
 
-
+/* ───── MODAL ───── */
 .modal-overlay {
     position: fixed;
     inset: 0;
@@ -169,3 +173,4 @@ button:hover {
     font-size: 13px;
     min-height: 18px;
 }
+
