@@ -114,6 +114,18 @@ button:hover {
     font-size: 13px;
     min-height: 18px;
 }
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 14px;
+}
+ 
+.separador {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 13px;
+}
 
 .link-senha {
     display: inline-block;
